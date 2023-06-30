@@ -31,7 +31,6 @@ temporal <- function(df, region) {
        col.main ="darkgreen")
 }
 
-
 # CALCULATIONS--------
 
 # Amritsar
@@ -82,51 +81,136 @@ temporal(fategarh, "Fatehgarh Sahib")
 # Fazilka 
 fazilka <- read.csv("fazilka.csv")
 fazilka <- na.omit(fazilka)
+corrf(fazilka)
+lagcorrf(fazilka$Cases, fazilka$HI, "Fazilka cases vs HI")
+lagcorrf(fazilka$Cases, fazilka$CI, "Fazilka cases vs CI")
+lagcorrf(fazilka$Cases, fazilka$BI, "Fazilka cases vs BI")
+temporal(fazilka, "Fazilka")
 
 # Ferozpur 
 ferozpur <- na.omit(read.csv("ferozpur.csv", header = TRUE))
+corrf(ferozpur)
+lagcorrf(ferozpur$Cases, ferozpur$HI, "Ferozpur cases vs HI")
+lagcorrf(ferozpur$Cases, ferozpur$CI, "Ferozpur cases vs CI")
+lagcorrf(ferozpur$Cases, ferozpur$BI, "Ferozpur cases vs BI")
+temporal(ferozpur, "Ferozpur")
 
 #Gurdaspur 
 gurdaspur <- na.omit(read.csv("gurdaspur.csv", header = TRUE))
+corrf(gurdaspur)
+lagcorrf(gurdaspur$Cases, gurdaspur$HI, "Gurdaspur cases vs HI")
+lagcorrf(gurdaspur$Cases, gurdaspur$CI, "Gurdaspur cases vs CI")
+lagcorrf(gurdaspur$Cases, gurdaspur$BI, "Gurdaspur cases vs BI")
+temporal(gurdaspur, "Gurdaspur")
 
 #Hoshiarpur 
 hoshiarpur <- na.omit(read.csv("hoshiarpur.csv", header = TRUE))
+corrf(hoshiarpur)
+lagcorrf(hoshiarpur$Cases, hoshiarpur$HI, "Hoshiarpur cases vs HI")
+lagcorrf(hoshiarpur$Cases, hoshiarpur$CI, "Hoshiarpur cases vs CI")
+lagcorrf(hoshiarpur$Cases, hoshiarpur$BI, "Hoshiarpur cases vs BI")
+temporal(hoshiarpur, "Hoshiarpur")
 
 #Jalandhar 
 jalandhar <- na.omit(read.csv("jalandhar.csv", header = TRUE))
+corrf(jalandhar)
+lagcorrf(jalandhar$Cases, jalandhar$HI, "Jalandhar cases vs HI")
+lagcorrf(jalandhar$Cases, jalandhar$CI, "Jalandhar cases vs CI")
+lagcorrf(jalandhar$Cases, jalandhar$BI, "Jalandhar cases vs BI")
+temporal(jalandhar, "Jalandhar")
 
 #Kapurthala 
 kapurthala <- na.omit(read.csv("kapurthala.csv", header = TRUE))
+corrf(kapurthala)
+lagcorrf(kapurthala$Cases, kapurthala$HI, "Kapurthala cases vs HI")
+lagcorrf(kapurthala$Cases, kapurthala$CI, "Kapurthala cases vs CI")
+lagcorrf(kapurthala$Cases, kapurthala$BI, "Kapurthala cases vs BI")
+temporal(kapurthala, "Kapurthala")
 
 #ludhiana 
 ludhiana <- na.omit(read.csv("ludhiana.csv", header = TRUE))
+corrf(ludhiana)
+lagcorrf(ludhiana$Cases, ludhiana$HI, "Ludhiana cases vs HI")
+lagcorrf(ludhiana$Cases, ludhiana$CI, "Ludhiana cases vs CI")
+lagcorrf(ludhiana$Cases, ludhiana$BI, "Ludhiana cases vs BI")
+temporal(ludhiana, "Ludhiana")
 
 #mansa 
 mansa <- na.omit(read.csv("mansa.csv", header = TRUE))
+corrf(mansa)
+lagcorrf(mansa$Cases, mansa$HI, "mansa cases vs HI")
+lagcorrf(mansa$Cases, mansa$CI, "mansa cases vs CI")
+lagcorrf(mansa$Cases, mansa$BI, "mansa cases vs BI")
+temporal(mansa, "mansa")
 
 #moga
 moga <- na.omit(read.csv("moga.csv", header = TRUE))
+corrf(moga)
+lagcorrf(moga$Cases,moga$HI, "Moga cases vs HI")
+lagcorrf(moga$Cases,moga$CI, "Moga cases vs CI")
+lagcorrf(moga$Cases,moga$BI, "Moga cases vs BI")
+temporal(moga, "Moga")
 
 #pathankot
 pathankot <- na.omit(read.csv("pathankot.csv", header = TRUE))
+corrf(pathankot)
+lagcorrf(pathankot$Cases, pathankot$HI, "Pathankot cases vs HI")
+lagcorrf(pathankot$Cases, pathankot$CI, "Pathankot cases vs CI")
+lagcorrf(pathankot$Cases, pathankot$BI, "Pathankot cases vs BI")
+temporal(pathankot, "pathankot")
 
 #patiala 
 patiala <- na.omit(read.csv("patiala.csv", header = TRUE))
+corrf(patiala)
+lagcorrf(patiala$Cases, patiala$HI, "patiala cases vs HI")
+lagcorrf(patiala$Cases, patiala$CI, "patiala cases vs CI")
+lagcorrf(patiala$Cases, patiala$BI, "patiala cases vs BI")
+temporal(patiala, "patiala")
 
 #rupnagar
 rupnagar <- na.omit(read.csv("rupnagar.csv", header = TRUE))
+corrf(rupnagar)
+lagcorrf(rupnagar$Cases, rupnagar$HI, "Rupnagar cases vs HI")
+lagcorrf(rupnagar$Cases, rupnagar$CI, "Rupnagar cases vs CI")
+lagcorrf(rupnagar$Cases, rupnagar$BI, "Rupnagar cases vs BI")
+temporal(rupnagar, "rupnagar")
 
 #sangrur 
 sangrur <- na.omit(read.csv("sangrur.csv", header = TRUE))
+corrf(sangrur)
+lagcorrf(sangrur$Cases, sangrur$HI, "sangrur cases vs HI")
+lagcorrf(sangrur$Cases, sangrur$CI, "sangrur cases vs CI")
+lagcorrf(sangrur$Cases, sangrur$BI, "sangrur cases vs BI")
+temporal(sangrur, "sangrur")
 
 #sas nagar
 sas <- na.omit(read.csv("sasnagar.csv", header = TRUE))
+corrf(sas)
+lagcorrf(sas$Cases, sas$HI, "sas nagar cases vs HI")
+lagcorrf(sas$Cases, sas$CI, "sas nagar cases vs CI")
+lagcorrf(sas$Cases, sas$BI, "sas nagar cases vs BI")
+temporal(sas, "sas nagar")
 
 #sbs nagar
 sbs <- na.omit(read.csv("sbsnagar.csv", header = TRUE))
+corrf(sbs)
+lagcorrf(sbs$Cases, sbs$HI, "SBS cases vs HI")
+lagcorrf(sbs$Cases, sbs$CI, "SBS cases vs CI")
+lagcorrf(sbs$Cases, sbs$BI, "SBS cases vs BI")
+temporal(sbs, "sbs nagar")
 
 # shir muktsar sahib
 shir <- na.omit(read.csv("shirmuktsar.csv", header = TRUE))
+corrf(shir)
+lagcorrf(shir$Cases, shir$HI, "Shir muktsar cases vs HI")
+lagcorrf(shir$Cases, shir$CI, "Shir muktsar cases vs CI")
+lagcorrf(shir$Cases, shir$BI, "Shir muktsar cases vs BI")
+temporal(shir, "shir muktsar sahib")
 
 #taran taran 
 taran <- na.omit(read.csv("tarantaran.csv", header = TRUE))
+corrf(taran)
+lagcorrf(taran$Cases, taran$HI, "Taran taran cases vs HI")
+lagcorrf(taran$Cases, taran$CI, "Taran taran cases vs CI")
+lagcorrf(taran$Cases, taran$BI, "Taran taran cases vs BI")
+temporal(taran, "taran taran")
