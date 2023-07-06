@@ -255,13 +255,53 @@ fore_ground(fategarh)
 fore_func_future(fazilka)
 fore_ground(fazilka)
 
-fore_func_future(bathinda)
-fore_ground(bathinda)
+fore_func_future(ferozpur)
+fore_ground(ferozpur)
 
+fore_func_future(gurdaspur)
+fore_ground(gurdaspur)
+
+fore_func_future(hoshiarpur)
+fore_ground(hoshiarpur)
+
+fore_func_future(jalandhar)
 fore_ground(jalandhar)
 
+fore_func_future(kapurthala)
+fore_ground(kapurthala)
 
+fore_func_future(ludhiana)
+fore_ground(ludhiana)
 
+fore_func_future(mansa)
+fore_ground(mansa)
+
+fore_func_future(moga)
+fore_ground(moga)
+
+fore_func_future(pathankot)
+fore_ground(pathankot)
+
+fore_func_future(patiala)
+fore_ground(patiala)
+
+fore_func_future(rupnagar)
+fore_ground(rupnagar)
+
+fore_func_future(sangrur)
+fore_ground(sangrur)
+
+fore_func_future(sas)
+fore_ground(sas)
+
+fore_func_future(sbs)
+fore_ground(sbs)
+
+fore_func_future(shir)
+fore_ground(shir)
+
+fore_func_future(taran)
+fore_ground(taran)
 
 #plot(m, forecast, xlabel = "Years", ylabel = "Cases")
 #prophet_plot_components(m, forecast)
