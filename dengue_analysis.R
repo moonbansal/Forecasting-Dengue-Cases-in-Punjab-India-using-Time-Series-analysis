@@ -246,37 +246,25 @@ fore_ground(barnala)
 fore_func_future(bathinda)
 fore_ground(bathinda)
 
+fore_func_future(faridkot)
+fore_ground(faridkot)
+
 fore_func_future(fategarh)
 fore_ground(fategarh)
+
+fore_func_future(fazilka)
+fore_ground(fazilka)
+
+fore_func_future(bathinda)
+fore_ground(bathinda)
 
 fore_ground(jalandhar)
 
 
 
-amritsar$ds <- amritsar$Date
-amritsar$ds <- as.Date(amritsar$ds, format = "%d/%m/%y")
-amritsar$y <- amritsar$Cases
-m <- prophet(amritsar)
-future <- make_future_dataframe(m, periods = 12, freq = "month", include_history = TRUE)
-forecast <- predict(m, future)
-plot(m, forecast, xlabel = "Years", ylabel = "Cases")
-prophet_plot_components(m, forecast)
-dyplot.prophet(m, forecast) #interactive plot
 
-df.cv <- cross_validation(m, units = "days", initial = 1096, period = 120, horizon = 360)
-plot_cross_validation_metric(df.cv, metric = "mse")
+#plot(m, forecast, xlabel = "Years", ylabel = "Cases")
+#prophet_plot_components(m, forecast)
 
-#checking forecast on ground data
-amritsar2 <- amritsar[1:48,]
-m2 <- prophet(amritsar2)
-future2 <- make_future_dataframe(m2, periods = 12, freq = "month", include_history = TRUE)
-forecast2 <- predict(m2, future2)
-plot(m2, forecast2)
-dyplot.prophet(m2, forecast2)
-
-fategarh$ds <- as.Date(fategarh$Date, format = "%d/%m/%y")
-fategarh$y <- fategarh$Cases
-m_fate <- prophet(fategarh[1:48,])
-future_fate <- make_future_dataframe(m_fate, periods = 12, freq = "month", include_history = TRUE)
-forecast_fate <- predict(m_fate, future_fate)
-plot(m_fate, forecast_fate)
+#df.cv <- cross_validation(m, units = "days", initial = 1096, period = 120, horizon = 360)
+#plot_cross_validation_metric(df.cv, metric = "mse")
